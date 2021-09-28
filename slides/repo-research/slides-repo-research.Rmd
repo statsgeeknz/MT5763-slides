@@ -1,0 +1,50 @@
+---
+title: "Reproducible research - (R) markdown"
+output: ioslides_presentation
+   
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Housekeeping
+
+* Project 1
+
+## Reproducible research
+
+* Simply(?) meaning others can recreate our results
+* There is a wide range from scarcely reproducible to fully reproducible
+  * From very poor: Point-and-click analysis and Excel
+  * To moderate: Well maintained code
+  * To very good: Markdown analysis with version control (and controlled randomness if needed)
+  * To bomb-proof: The above, but in a virtual machine
+  
+## In essence
+
+A high-level examination of where reproducibility might go awry, and processes to guard against it.
+
+
+## Some real examples
+
+* Little reproducibility [_something with excel_]
+* Good reproducibilty [_version controlled code_]
+
+## R Markdown
+
+* Interweaves code, reporting and outputs
+* Can produce multiple output types from the same document e.g. HTML, PDF, Word etc
+* Distances content from appearance (like LaTeX, HTML-CSS etc it is mark-up, but simplified)
+* Compiling (_knitting_) the document runs all the analysis, generates a document with outputs
+
+
+## Possible reproducibility failings?
+
+Does this ensure reproducibility?
+
+* Code and inputs can change (why?) - the document published Monday may not match Friday
+* Solution - keep track of changes over time: _version control_ we look at this next
+
+
+
